@@ -6,7 +6,7 @@
 <manifest>
   <remote name="iperf" fetch="https://github.com/esnet/"/>
   <remote name="seL4" fetch="../NiramayVaidya"/>
-  <remote name="seL4" fetch="../JFamo"/>
+  <remote name="seL4-wip" fetch="../JFamo"/>
   <remote name="seL4-projects" fetch="../seL4proj"/>
   
   <default remote="seL4" revision="master"/>
