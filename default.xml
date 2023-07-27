@@ -6,7 +6,7 @@
 <manifest>
   <remote name="iperf" fetch="https://github.com/esnet/"/>
   <remote name="seL4" fetch="../NiramayVaidya"/>
-  <remote name="seL4-wip" fetch="../JFamo"/>
+  <remote name="wip" fetch="../JFamo"/>
   <remote name="seL4-projects" fetch="../seL4proj"/>
   
   <default remote="seL4" revision="master"/>
@@ -14,9 +14,9 @@
   <project name="iperf" path="projects/iperf" remote="iperf" revision="274eaed5b17f664e4ac6c79f1ba854b55f15a3a3" upstream="refs/tags/3.1.3" dest-branch="refs/tags/3.1.3"/>
   <project name="leveldb" path="projects/leveldb" remote="seL4-projects" revision="90894f76537ca8a74c7761f2dd3a34341ba90007" upstream="sel4" dest-branch="sel4"/>
   <project name="musllibc" path="projects/musllibc" revision="3d6b939e8f05cb1d2a1a8c8166609bf2e652e975" upstream="sel4" dest-branch="sel4"/>
-  <project name="rumprun" path="projects/rumprun" revision="60857529ae82d8b59d75ecb42af84f910f933d2e" upstream="master" dest-branch="master"/>
+  <project name="rumprun" path="projects/rumprun" remote="wip" revision="60857529ae82d8b59d75ecb42af84f910f933d2e" upstream="master" dest-branch="master"/>
   <project name="rumprun-packages" path="projects/rumprun-packages" revision="b6a88a4bab2a98fb419bb73836a6b50e26a9a7ae" upstream="master" dest-branch="master"/>
-  <project name="rumprun-sel4-demoapps" path="projects/rumprun-sel4-demoapps" revision="35132b8bdfe1ff6eea4e821aa77c86625c312978" upstream="master" dest-branch="master">
+  <project name="rumprun-sel4-demoapps" path="projects/rumprun-sel4-demoapps" remote="wip" revision="f3554f4927adf6eebc785d792107c2d0c000e8ac" upstream="master" dest-branch="master">
     <linkfile src="README.md" dest="README.md"/>
     <linkfile src="settings.cmake" dest="settings.cmake"/>
   </project>
